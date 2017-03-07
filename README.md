@@ -4,7 +4,7 @@
 
 ## Example
 
-Input:
+### Input:
 
 ```css
 .foo {
@@ -15,7 +15,7 @@ Input:
 }
 ```
 
-Output:
+### Output:
 
 ```css
 .foo::before {
@@ -37,9 +37,10 @@ npm i -S postcss-flextype
 ## Usage
 
 ```javascript
+const postcss = require('postcss');
 const flextype = require('postcss-flextype');
 
-postcss([flextype], { replace: true });
+postcss([flextype]);
 ```
 
 ### Options
