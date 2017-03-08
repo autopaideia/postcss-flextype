@@ -1,6 +1,6 @@
 # postcss-flextype
 
-[PostCSS](https://github.com/postcss/postcss) plugin for use with [https://github.com/autopaideia/flextype](flextype) that converts `--flextype` declarations into hidden `::before` pseudo-content to work with browsers that don't yet support CSS variables.
+[PostCSS](https://github.com/postcss/postcss) plugin for use with [flextype](https://github.com/autopaideia/flextype) that converts `--flextype` declarations into hidden `::before` pseudo-content to work with browsers that don't yet support CSS variables.
 
 ## Example
 
