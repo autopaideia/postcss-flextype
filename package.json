@@ -17,8 +17,11 @@
     "flextype"
   ],
   "author": {
-    "name": "Nick Bosman"
+    "name": "Nick Bosman",
+    "email": "autopaideia@gmail.com"
   },
+  "repository": "autopaideia/postcss-flextype",
+  "bugs": "https://github.com/autopaideia/postcss-flextype/issues",
   "license": "MIT",
   "dependencies": {
     "postcss": "^5.2.15"
