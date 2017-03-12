@@ -4,8 +4,9 @@
   "description": "PostCSS plugin that converts --flextype CSS variables into ::before pseudo content for use with flextype.js.",
   "main": "dist/postcss-flextype.js",
   "scripts": {
-    "lint": "eslint src",
-    "test": "faucet ./test/*.js",
+    "lint": "eslint \"src/**/*.js\" \"test/**/*.js\"",
+    "test": "faucet ./test/*.spec.js",
+    "cover": "istanbul cover --report lcovonly test/*.spec.js && cat ./coverage/lcov.info | codecov",
     "preversion": "del-cli dist && babel src --out-dir dist"
   },
   "files": [
@@ -29,11 +30,13 @@
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-preset-env": "^1.2.0",
+    "codecov": "^1.0.1",
     "del-cli": "^0.2.1",
     "eslint": "^3.17.0",
     "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-import": "^2.2.0",
     "faucet": "0.0.1",
+    "istanbul": "^0.4.5",
     "tape": "^4.6.3"
   }
 }
