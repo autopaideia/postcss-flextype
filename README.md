@@ -31,7 +31,7 @@
 ## Install
 
 ```bash
-npm i -S postcss-flextype
+npm install postcss-flextype --save
 ```
 
 ## Usage
