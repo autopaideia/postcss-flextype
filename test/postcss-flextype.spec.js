@@ -3,7 +3,7 @@ const postcss = require('postcss');
 const plugin = require('../src/postcss-flextype');
 
 function test(t, args) {
-  return postcss([plugin(args.opts || {})])
+  return postcss([plugin(args.opts)])
     .process(args.rule, { map: { inline: false, annotation: false } })
     .then((result) => {
       const map = result.map.toJSON();
